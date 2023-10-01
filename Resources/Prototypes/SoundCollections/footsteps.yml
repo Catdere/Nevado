@@ -5,7 +5,6 @@
   - /Audio/Effects/Footsteps/carpet2.ogg
   - /Audio/Effects/Footsteps/carpet3.ogg
   - /Audio/Effects/Footsteps/carpet4.ogg
-  - /Audio/Effects/Footsteps/carpet5.ogg
 
 - type: soundCollection
   id: FootstepWood
@@ -14,7 +13,6 @@
   - /Audio/Effects/Footsteps/wood2.ogg
   - /Audio/Effects/Footsteps/wood3.ogg
   - /Audio/Effects/Footsteps/wood4.ogg
-  - /Audio/Effects/Footsteps/wood5.ogg
 
 - type: soundCollection
   id: FootstepCatwalk
@@ -23,7 +21,6 @@
   - /Audio/Effects/Footsteps/catwalk2.ogg
   - /Audio/Effects/Footsteps/catwalk3.ogg
   - /Audio/Effects/Footsteps/catwalk4.ogg
-  - /Audio/Effects/Footsteps/catwalk5.ogg
 
 - type: soundCollection
   id: FootstepFloor
@@ -32,7 +29,6 @@
   - /Audio/Effects/Footsteps/floor2.ogg
   - /Audio/Effects/Footsteps/floor3.ogg
   - /Audio/Effects/Footsteps/floor4.ogg
-  - /Audio/Effects/Footsteps/floor5.ogg
 
 - type: soundCollection
   id: FootstepHull
@@ -65,7 +61,7 @@
   files:
   - /Audio/Effects/Footsteps/clownstep1.ogg
   - /Audio/Effects/Footsteps/clownstep2.ogg
-  
+
 - type: soundCollection
   id: FootstepJester
   files:
@@ -90,7 +86,6 @@
   - /Audio/Effects/Footsteps/asteroid2.ogg
   - /Audio/Effects/Footsteps/asteroid3.ogg
   - /Audio/Effects/Footsteps/asteroid4.ogg
-  - /Audio/Effects/Footsteps/asteroid5.ogg
 
 - type: soundCollection
   id: FootstepSnow
@@ -123,7 +118,6 @@
   - /Audio/Effects/Footsteps/hardbarefoot2.ogg
   - /Audio/Effects/Footsteps/hardbarefoot3.ogg
   - /Audio/Effects/Footsteps/hardbarefoot4.ogg
-  - /Audio/Effects/Footsteps/hardbarefoot5.ogg
 
 - type: soundCollection
   id: BarestepCarpet
@@ -141,7 +135,6 @@
   - /Audio/Effects/Footsteps/woodbarefoot2.ogg
   - /Audio/Effects/Footsteps/woodbarefoot3.ogg
   - /Audio/Effects/Footsteps/woodbarefoot4.ogg
-  - /Audio/Effects/Footsteps/woodbarefoot5.ogg
 
 - type: soundCollection
   id: FootstepBounce
