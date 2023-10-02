@@ -1059,6 +1059,9 @@ namespace Content.Shared.Interaction
             }
 
             _adminLogger.Add(LogType.Throw, LogImpact.Low,$"{ToPrettyString(user):user} threw {ToPrettyString(thrown):entity}");
+
+            var throwerMsg = new ThrownEvent(user, thrown);
+            RaiseLocalEvent(user, throwerMsg, true);
         }
         #endregion
 

@@ -37,6 +37,7 @@ public abstract class SharedEmitSoundSystem : EntitySystem
         SubscribeLocalEvent<EmitSoundOnLandComponent, LandEvent>(OnEmitSoundOnLand);
         SubscribeLocalEvent<EmitSoundOnUseComponent, UseInHandEvent>(OnEmitSoundOnUseInHand);
         SubscribeLocalEvent<EmitSoundOnThrowComponent, ThrownEvent>(OnEmitSoundOnThrown);
+        SubscribeLocalEvent<EmitSoundOnThrowingComponent, ThrownEvent>(OnEmitSoundOnThrowing);
         SubscribeLocalEvent<EmitSoundOnActivateComponent, ActivateInWorldEvent>(OnEmitSoundOnActivateInWorld);
         SubscribeLocalEvent<EmitSoundOnPickupComponent, GotEquippedHandEvent>(OnEmitSoundOnPickup);
         SubscribeLocalEvent<EmitSoundOnDropComponent, DroppedEvent>(OnEmitSoundOnDrop);
@@ -79,6 +80,11 @@ public abstract class SharedEmitSoundSystem : EntitySystem
     }
 
     private void OnEmitSoundOnThrown(EntityUid uid, BaseEmitSoundComponent component, ThrownEvent args)
+    {
+        TryEmitSound(uid, component, args.User, false);
+    }
+
+    private void OnEmitSoundOnThrowing(EntityUid uid, BaseEmitSoundComponent component, ThrownEvent args)
     {
         TryEmitSound(uid, component, args.User, false);
     }
