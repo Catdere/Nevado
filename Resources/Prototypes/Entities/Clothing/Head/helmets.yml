@@ -351,3 +351,14 @@
   - type: Construction
     graph: BoneHelmet
     node: helmet
+
+- type: entity
+  parent: ClothingHeadHelmetBasic
+  id: ClothingHeadHelmetCICamo
+  name: ci camo helemt
+  description: 
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Helmets/cicamohelmet.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Helmets/cicamohelmet.rsi

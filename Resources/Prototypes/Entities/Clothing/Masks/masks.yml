@@ -505,3 +505,29 @@
   - type: EyeProtection
   - type: BreathMask
   - type: IdentityBlocker
+
+- type: entity
+  parent: ClothingMaskGas
+  id: ClothingMaskCIGasMask
+  name: ci gas mask
+  description: A close-fitting tactical mask that can be connected to an air supply.
+  components:
+  - type: Sprite
+    sprite: Clothing/Mask/cigasmask.rsi
+  - type: Clothing
+    sprite: Clothing/Mask/cigasmask.rsi
+  - type: FlashImmunity
+  - type: EyeProtection
+
+- type: entity
+  parent: ClothingMaskGas
+  id: ClothingMaskTrollFace
+  name: Face Of God
+  description: What have I become but a shell of formor self.
+  components:
+  - type: Sprite
+    sprite: Clothing/Mask/trollface
+  - type: Clothing
+    sprite: Clothing/Mask/trollface
+  - type: FlashImmunity
+  - type: EyeProtection
