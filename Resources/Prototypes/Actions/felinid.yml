@@ -1,0 +1,12 @@
+﻿- type: entity
+  id: ActionLeapForward
+  name: Leap
+  description: Leap forward, vaulting objects in the way.
+  noSpawn: true
+  components:
+  - type: InstantAction
+    icon:
+      sprite: Interface/Actions/actions_felinid.rsi
+      state: leap
+    event: !type:LeapForwardEvent
+    useDelay: 3
