@@ -1327,3 +1327,14 @@
     sprite: Clothing/Uniforms/Jumpsuit/gladiator.rsi
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpsuit/gladiator.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitCICamo
+  name: ci camo uniform
+  description: 
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/cicamo.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuit/cicamo.rsi
