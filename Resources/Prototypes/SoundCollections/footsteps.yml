@@ -17,10 +17,10 @@
 - type: soundCollection
   id: FootstepCatwalk
   files:
-  - /Audio/Effects/Footsteps/catwalk1.ogg
-  - /Audio/Effects/Footsteps/catwalk2.ogg
-  - /Audio/Effects/Footsteps/catwalk3.ogg
-  - /Audio/Effects/Footsteps/catwalk4.ogg
+  - /Audio/Effects/Footsteps/plating1.ogg
+  - /Audio/Effects/Footsteps/plating2.ogg
+  - /Audio/Effects/Footsteps/plating3.ogg
+  - /Audio/Effects/Footsteps/plating4.ogg
 
 - type: soundCollection
   id: FootstepFloor
@@ -46,15 +46,14 @@
   - /Audio/Effects/Footsteps/plating2.ogg
   - /Audio/Effects/Footsteps/plating3.ogg
   - /Audio/Effects/Footsteps/plating4.ogg
-  - /Audio/Effects/Footsteps/plating5.ogg
 
 - type: soundCollection
   id: FootstepTile
   files:
-  - /Audio/Effects/Footsteps/tile1.ogg
-  - /Audio/Effects/Footsteps/tile2.ogg
-  - /Audio/Effects/Footsteps/tile3.ogg
-  - /Audio/Effects/Footsteps/tile4.ogg
+  - /Audio/Effects/Footsteps/floor1.ogg
+  - /Audio/Effects/Footsteps/floor2.ogg
+  - /Audio/Effects/Footsteps/floor3.ogg
+  - /Audio/Effects/Footsteps/floor4.ogg
 
 - type: soundCollection
   id: FootstepClown
