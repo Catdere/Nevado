@@ -3,7 +3,9 @@ using Content.Shared.Gravity;
 using Content.Shared.Interaction;
 using Content.Shared.Movement.Components;
 using Content.Shared.Projectiles;
+using Content.Shared.Sound.Components;
 using Content.Shared.Tag;
+using Robust.Shared.Audio;
 using Robust.Shared.Map;
 using Robust.Shared.Physics;
 using Robust.Shared.Physics.Components;
@@ -29,6 +31,7 @@ public sealed class ThrowingSystem : EntitySystem
     [Dependency] private readonly SharedPhysicsSystem _physics = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
     [Dependency] private readonly ThrownItemSystem _thrownSystem = default!;
+    [Dependency] private readonly SharedAudioSystem _audioSystem = default!;
 
     public void TryThrow(
         EntityUid uid,
@@ -59,7 +62,8 @@ public sealed class ThrowingSystem : EntitySystem
         float strength = 1.0f,
         EntityUid? user = null,
         float pushbackRatio = PushbackDefault,
-        bool playSound = true)
+        bool playSound = true,
+        bool throwSound = true)
     {
         var physicsQuery = GetEntityQuery<PhysicsComponent>();
         if (!physicsQuery.TryGetComponent(uid, out var physics))
@@ -77,7 +81,8 @@ public sealed class ThrowingSystem : EntitySystem
             strength,
             user,
             pushbackRatio,
-            playSound);
+            playSound,
+            throwSound);
     }
 
     /// <summary>
@@ -95,7 +100,8 @@ public sealed class ThrowingSystem : EntitySystem
         float strength = 1.0f,
         EntityUid? user = null,
         float pushbackRatio = PushbackDefault,
-        bool playSound = true)
+        bool playSound = true,
+        bool throwSound = true)
     {
         if (strength <= 0 || direction == Vector2Helpers.Infinity || direction == Vector2Helpers.NaN || direction == Vector2.Zero)
             return;

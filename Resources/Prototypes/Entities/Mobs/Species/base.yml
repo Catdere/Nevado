@@ -171,6 +171,9 @@
       types:
         Blunt: 5
   - type: SleepEmitSound
+  - type: EmitSoundOnThrowing
+    sound:
+        path: /Audio/Effects/throw.ogg
   - type: SSDIndicator
   - type: StandingState
   - type: Fingerprint
