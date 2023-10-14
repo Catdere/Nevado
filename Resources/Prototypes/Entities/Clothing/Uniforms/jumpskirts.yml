@@ -813,3 +813,14 @@
   - type: Construction
     graph: WebObjects
     node: jumpskirt
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtCMOturtleneck
+  name: cmo turtleneck
+  description: Turtle
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/cmo turtleneck.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpskirt/cmo turtleneck.rsi
