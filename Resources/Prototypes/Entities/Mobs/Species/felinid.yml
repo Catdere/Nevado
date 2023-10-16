@@ -62,7 +62,7 @@
     speechSounds: Felinid
     speechVerb: Felinid
   - type: Leap
-    duration: 0.5
+    duration: 0.6
   - type: Butcherable
     butcheringType: Spike
     spawned:
