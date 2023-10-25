@@ -192,7 +192,7 @@
   parent: BasePlushie
   id: PlushieEnrico
   name: blue lizard plushie
-  description: An adorable stuffed toy that resembles a lizardman named... salzar!
+  description: An adorable stuffed toy that resembles a famous lizard named... Salza!
   components:
   - type: Sprite
     state: plushie_enrico
