@@ -21,7 +21,7 @@
       collection: ToyFall
   - type: ItemCooldown
   - type: UseDelay
-    delay: 1.0
+    delay: 0.5
   - type: MeleeWeapon
     soundHit:
       collection: ToySqueak
@@ -175,6 +175,27 @@
   components:
   - type: Sprite
     state: plushie_lizard
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Items/Toys/weh.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Items/Toys/weh.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Items/Toys/weh.ogg
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Items/Toys/weh.ogg
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieEnrico
+  name: blue lizard plushie
+  description: An adorable stuffed toy that resembles a famous lizard named... Salza!
+  components:
+  - type: Sprite
+    state: plushie_enrico
   - type: EmitSoundOnUse
     sound:
       path: /Audio/Items/Toys/weh.ogg
