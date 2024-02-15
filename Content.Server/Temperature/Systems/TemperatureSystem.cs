@@ -293,7 +293,10 @@ public sealed class TemperatureSystem : EntitySystem
     private void OnTemperatureChangeAttempt(EntityUid uid, TemperatureProtectionComponent component,
         InventoryRelayedEvent<ModifyChangedTemperatureEvent> args)
     {
-        args.Args.TemperatureDelta *= component.Coefficient;
+        var ev = new GetTemperatureProtectionEvent(component.Coefficient);
+        RaiseLocalEvent(uid, ref ev);
+
+        args.Args.TemperatureDelta *= ev.Coefficient;
     }
 
     private void OnParentChange(EntityUid uid, TemperatureComponent component,
@@ -341,7 +344,8 @@ public sealed class TemperatureSystem : EntitySystem
     {
         RecalculateAndApplyParentThresholds(root, temperatureQuery, transformQuery, tempThresholdsQuery);
 
-        foreach (var child in Transform(root).ChildEntities)
+        var enumerator = Transform(root).ChildEnumerator;
+        while (enumerator.MoveNext(out var child))
         {
             RecursiveThresholdUpdate(child, temperatureQuery, transformQuery, tempThresholdsQuery);
         }
